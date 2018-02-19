@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MikTacToe v0.1.0</title>
+	<style type="text/css">
+		/* setting bgcolor on html is hack cuz of weird chrome bug */
+		html,body {
+			background-color: #66f;
+		}
+		canvas#cnv {
+			background-color: #000;
+			margin: 10px auto;
+			display: block;
+			border: 1px solid #99f;
+		}
+		#container {
+			text-align: center;
+			color: #fff;
+			font-family: Georgia;
+		}
+		#container > a {
+			color: #fff;
+		}
+		h1 {
+			user-select: none;
+		}
+		h1 > span {
+			color: #f00;
+		}
+	</style>
+	<script type="text/javascript" src="miktactoe.js"></script>
+</head>
+<body>
+	<div id="container">
+		<h1>Mi<span>K</span>TacToe</h1>
+		<canvas id="cnv"></canvas>
+		<a href="#" onclick="window.location.reload()">Start over</a>
+	</div>
+</body>
